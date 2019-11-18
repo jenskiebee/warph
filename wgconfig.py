@@ -54,7 +54,7 @@ class ConfigurationData():
 
 def get_timestamp() -> str:
     # SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss", Locale.US)
-    timestamp = datetime.now(tz=timezone.utc).astimezone(None).strftime("%Y-%m-%dT%H:%M:%S.%f%z")
+    timestamp = datetime.now(tz=timezone.utc).astimezone(Asia/Manila).strftime("%Y-%m-%dT%H:%M:%S.%f%z")
     # trim microseconds to 2 digits
     timestamp = timestamp[:-10]+timestamp[-6:]
     # separate timezone offset
@@ -78,7 +78,7 @@ def do_register() -> AccountData:
     private_key = gen_private_key()
     public_key = gen_public_key(private_key)
     data = {"install_id": "", "tos": timestamp, "key": public_key, "fcm_token": "", "type": "Android",
-            "locale": "en_US"}
+            "locale": "en_PH"}
 
     headers = default_headers.copy()
     headers["Content-Type"] = "application/json; charset=UTF-8"
