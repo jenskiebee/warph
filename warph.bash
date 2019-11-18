@@ -27,4 +27,3 @@ cp wgcf-profile.conf ImportThis.conf
 clear
 echo -e "\n\nYour Cloudflare WARP client is Successfully Configured\nYour config is located at /storage/emulated/0/WireGuard/ImportThis.conf\nNow Open your WireGuard App then click the plus sign and then tap/click the 'Create from file or Archive'\nThen locate the WireGuard folder on your phone internal storage and click or tap the ImportThis.conf file\nAnd lastly tap/click the switch to run the VPN\n\n Enjoy Surfing!"
 cd
-exit
