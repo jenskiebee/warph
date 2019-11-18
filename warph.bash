@@ -3,12 +3,10 @@
 # Script by Bon-chan
 clear
 
-
 if [ "$(uname -o)" != 'Android' ]; then
  echo -e "[\e[1;31mError\e[0m] This script is for Termux Android users only"
  exit 1
 fi
-
 
 echo -e ""
 termux-setup-storage
