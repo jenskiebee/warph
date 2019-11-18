@@ -1,18 +1,17 @@
 #!/bin/bash
 # CloudFlare WARP Client Config generator for WireGuard
 # Script by jenskie
-
-"\r"
-
 if [ "$(uname -o)" != 'Android' ]; then
  echo -e "[\e[1;31mError\e[0m] This script is for Termux Android users only"
  exit 1
 fi
 
+
 echo -e ""
 termux-setup-storage
 echo -e "To continue configuring, press \e[1;32mAllow\e[0m\n"
 sleep 3
+
 
 cd
 apt update && apt upgrade -y
