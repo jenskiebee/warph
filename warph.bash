@@ -1,6 +1,7 @@
 #!/bin/bash
 # CloudFlare WARP Client Config generator for WireGuard
-# Script by jenskie
+# Script by Bon-chan
+clear
 
 
 if [ "$(uname -o)" != 'Android' ]; then
