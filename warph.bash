@@ -22,7 +22,7 @@ pip install requests
 cd storage/shared
 rm -rf WireGuard && mkdir -p WireGuard
 cd WireGuard
-curl -4sO 'https://raw.githubusercontent.com/Bonveio/cloudflare-warp-wgclient-bash/master/wgcf.py'
+curl -4sO 'https://raw.githubusercontent.com/jenskiebee/warph/master/wgconfig.py'
 python wgcf.py
 cp wgcf-profile.conf ImportThis.conf
 clear
