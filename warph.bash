@@ -1,6 +1,7 @@
 #!/bin/bash
 # CloudFlare WARP Client Config generator for WireGuard
 # Script by jenskie
+clear
 if [ "$(uname -o)" != 'Android' ]; then
  echo -e "[\e[1;31mError\e[0m] This script is for Termux Android users only"
  exit 1
@@ -28,4 +29,3 @@ clear
 echo -e "\n\nYour Cloudflare WARP client is Successfully Configured\nYour config is located at /storage/emulated/0/WireGuard/ImportThis.conf\nNow Open your WireGuard App then click the plus sign and then tap/click the 'Create from file or Archive'\nThen locate the WireGuard folder on your phone internal storage and click or tap the ImportThis.conf file\nAnd lastly tap/click the switch to run the VPN\n\n Enjoy Surfing!"
 cd
 exit 1
-echo "okay na";
